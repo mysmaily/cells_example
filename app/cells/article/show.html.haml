@@ -1,0 +1,12 @@
+.span3.box
+  .thumbnail
+    .frame
+      %h3{style: "text-align:center; border-bottom: 1px solid #ddd; margin-top: 0px"}
+        = @cell[:name]
+      .caption
+        - @cell[:context].each do |t|
+          %p
+            = t.title
+    %a.btn.btn-block.btn-info{:href => "/articles/new"}
+      %i
+      New
