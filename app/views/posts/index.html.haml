@@ -1,0 +1,9 @@
+.well
+  .container
+    .row
+      .span12{style: "text-align:center"}
+        %h1 Demo Rails app using Cells
+.container
+  #portfolio.row
+    - @hash.each do |cell|
+      = render_cell cell[:name], :show, cell
