@@ -1,0 +1,16 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "content-type"}/
+    %meta{:charset => "utf-8"}/
+    %title Demo Rails app using Cells
+    %meta{:content => "Bootply", :name => "generator"}/
+    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1", :name => "viewport"}/
+    %link{:href => "//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css", :rel => "stylesheet"}
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    :css
+      #portfolio .box{
+        margin-bottom:20px;
+      }
+  %body
+    = yield
