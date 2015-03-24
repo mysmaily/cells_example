@@ -25,6 +25,7 @@ gem 'cells', '~> 3.10.0'
 gem 'haml'
 gem 'foundation-rails', '~> 5.2.2.0'
 gem 'pry'
+gem 'draper', '~> 1.3'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

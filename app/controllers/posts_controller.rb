@@ -1,39 +1,9 @@
 class PostsController < ApplicationController
 
   def index
-    posts = Post.all
-    articles = Article.all
-    galleries = Gallery.all
-    photos = Photo.all
-
-
-    @hash = []
-    @hash[0] = 
-              { :name => "Comment",
-                :context => posts 
-              }
-
-    @hash[1] =
-             {  :name => "Article",
-                :context => articles
-              }
-    @hash[2] =
-             {  :name => "Gallery",
-                :context => galleries
-              }
-    @hash[3] =
-             {  :name => "Photo",
-                :context => photos
-              }
-  end
-
-  def new
-    @post = Post.new
-  end
-
-  def create
-    @post = Post.create(params[:post])
-    redirect_to root_path
+    @widget_cells = WidgetDecorator.decorate_collection(Widget.all).map do |w|
+      w.as_json
+    end
   end
 
 end

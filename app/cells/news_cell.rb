@@ -1,4 +1,4 @@
-class PhotoCell < Cell::Rails
+class NewsCell < Cell::Rails
 
   def show(cell)
   	@cell = cell

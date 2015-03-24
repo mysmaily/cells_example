@@ -1,4 +1,4 @@
-class ArticleCell < Cell::Rails
+class MusicCell < Cell::Rails
 
   def show(cell)
   	@cell = cell

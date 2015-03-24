@@ -1,4 +1,4 @@
-class CommentCell < Cell::Rails
+class FansCell < Cell::Rails
 
   def show(cell)
   	@cell = cell
